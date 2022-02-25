@@ -1,0 +1,78 @@
+.page {
+  padding-top: var(--header-height);
+  background-color: var(--container-color);
+
+  &-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-numbers > i {
+    color: var(--text-color);
+    font-size: 1rem;
+  }
+
+  &-numbers > i.uil-favorite {
+    color: var(--first-color);
+  }
+
+  &-numbers > .number {
+    font-size: 0.9rem;
+    color: var(--text-color);
+  }
+
+	&-bottom{
+		background-color: var(--section-bg);
+		padding: 4.5rem;
+		margin-top: var(--header-height);
+	}
+	&-bottom .container{
+		display: flex;
+		justify-content: space-evenly;
+	}
+}
+
+.card-deck {
+  margin-top: 3rem;
+  overflow: hidden;
+}
+
+.card {
+	position: relative;
+
+  &-img {
+    overflow: hidden;
+  }
+
+  &-img::before {
+		content: "10 APR";
+		color: #fff;
+		font-weight: 500;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 3.5rem;
+		height: 3.5rem;
+		border-radius: 6px 0 0 0;
+		background-color: var(--first-color);
+		z-index: 10;
+		font-size: 1.125rem;
+  }
+
+  &-img-top {
+    transition: 1s;
+  }
+
+  &-img-top:hover {
+    transform: scale(1.2);
+    filter: brightness(50%);
+  }
+
+  &-text {
+    font-size: var(--tiny-font-size);
+    color: var(--text-color);
+    margin-bottom: var(--normal-font-size);
+  }
+}

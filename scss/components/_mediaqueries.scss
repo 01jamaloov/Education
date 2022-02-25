@@ -1,0 +1,214 @@
+// For large devices
+@media screen and (min-width: 900px) {
+}
+
+// For medium devices
+@media screen and (min-width: 768px) {
+  .desktop-nav {
+    display: flex;
+  }
+  .mobile-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  .header {
+    height: calc(var(--header-height) + 43.125rem);
+    .navbar {
+      height: 6.25rem;
+    }
+  }
+  .mobile-nav .navbar-brand {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+  }
+
+  .mobile-nav .nav-link-btn {
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    top: 5.5%;
+  }
+
+  .section {
+    &-title {
+      font-size: 1.6rem;
+    }
+    &-subtitle {
+      margin: 0;
+      font-size: 0.75rem;
+    }
+    .statistics {
+      padding: 2rem;
+      bottom: 0;
+
+      &-title {
+        font-size: 1.2rem;
+        margin-bottom: 4px;
+      }
+
+      &-text {
+        margin: 0;
+        font-size: 11px;
+      }
+    }
+    .site-btn {
+      margin-bottom: 3rem;
+    }
+    .card-body {
+      padding: 0.5rem;
+      .number {
+        font-size: 0.75rem;
+      }
+    }
+    .card-img::before {
+      width: 2rem;
+      height: 2rem;
+      font-size: 0.6875rem;
+    }
+    .card-title {
+      font-size: 0.8rem;
+    }
+    .card-text {
+      font-size: 0.65rem;
+      margin-bottom: 0.1rem;
+    }
+    .page-bottom {
+      padding: 1.5rem;
+    }
+
+    .form {
+      max-width: 20.625rem;
+      margin-top: 1.25rem;
+
+      &-wrapper {
+        margin-top: 2rem;
+      }
+      &-btn {
+        font-size: 0.875rem;
+        min-height: 2.2rem;
+        min-width: 6rem;
+      }
+    }
+
+    .courses-card {
+      width: calc(50% - 10px);
+      height: 470px;
+    }
+  }
+  .work {
+    padding: 5rem 0;
+    &-card {
+      margin-bottom: 3.125rem;
+    }
+  }
+  .blog-link {
+    font-size: 0.625rem;
+  }
+  .site-btn {
+    font-size: 0.75rem;
+  }
+  .contact {
+    padding: 1rem 0 3rem;
+    &-wrapper {
+      max-width: 25rem;
+    }
+  }
+  .footer-wrapper {
+    row-gap: 3rem;
+    .footer-link {
+      font-size: 0.75rem;
+    }
+    .footer-item {
+      line-height: 1.2;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    top: 4%;
+  }
+  .header {
+    &-content {
+      top: 3.5%;
+    }
+    height: calc(var(--header-height) + 36.125rem);
+    &-title {
+      font-size: 1.5rem;
+    }
+    &-subtitle {
+      font-size: 0.8rem;
+    }
+    .navbar {
+      height: 5rem;
+    }
+  }
+  .section {
+    &-wrapper {
+      max-width: 25rem;
+    }
+    .course-wrapper {
+      padding-top: calc(var(--header-height));
+    }
+    .course-text {
+      margin: 1rem 0;
+      font-size: 0.8rem;
+    }
+    .statistics {
+      padding: 1rem;
+      &-title {
+        font-size: 0.8rem;
+      }
+    }
+    .courses-card {
+      width: 100%;
+      height: auto;
+    }
+
+    .review-content {
+			max-width: 100%;
+    }
+  }
+}
+
+// For small devices
+@media screen and (max-width: 320px) {
+  .section {
+    .statistics {
+      padding: 1rem;
+    }
+    .page-bottom {
+      margin-top: 4rem;
+    }
+    .form {
+      max-width: 90%;
+      &-btn {
+        min-width: 5rem;
+        min-height: 2rem;
+      }
+      .my-form {
+        padding: 6px;
+      }
+    }
+    .site-btn {
+      padding: 0.8rem 1.5rem;
+    }
+  }
+  .contact {
+    .review-content {
+      max-width: 100%;
+    }
+  }
+}

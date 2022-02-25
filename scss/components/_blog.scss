@@ -1,0 +1,13 @@
+.blog-wrapper {
+  max-width: 26rem;
+}
+
+.blog-deck {
+  margin-bottom: 3rem;
+
+  .blog-img {
+    transition: 1s;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+}

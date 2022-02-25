@@ -1,0 +1,42 @@
+html {
+  scroll-behavior: smooth;
+
+  body {
+    font-family: var(--body-font);
+    background-color: var(--container-color);
+    position: relative;
+    min-height: 100vh;
+    cursor: none;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .body-wrapper {
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  a:hover {
+    cursor: none;
+  }
+}
+
+// .my-modal {
+// 	display: none;
+// 	position: fixed;
+// 	align-items: center;
+// 	justify-content: center;
+// 	top: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	left: 0;
+// 	background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+// }
+
+// .my-modal-content {
+// 	width: 500px;
+// 	background-color: #fff;
+// 	padding: 20px;
+// }

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Jony Ahmed",
+    "status": "UI/UX Student",
+		"headshot": "./img/man-01.jpg",
+    "opinion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis"
+  },
+  {
+    "id": 2,
+    "name": "Mukter Hossain",
+    "status": "Web development Student",
+		"headshot": "./img/man-02.jpg",
+    "opinion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi enim eveniet beatae numquam quas iusto vero, ex nam tempore officia voluptatum optio error excepturi illum possimus odit sequi laboriosam perferendis."
+  },
+  {
+    "id": 3,
+    "name": "Jony Sing",
+    "status": "Graphic Design Student",
+		"headshot": "./img/man-03.jpg",
+    "opinion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptatem quae necessitatibus id? Accusantium, sapiente."
+  },
+  {
+    "id": 4,
+    "name": "Jack Finnigan",
+    "status": "UI/UX Student",
+		"headshot": "./img/woman-01.jpg",
+    "opinion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis"
+  },
+  {
+    "id": 5,
+    "name": "Michael Dam",
+    "status": "Web development Student",
+		"headshot": "./img/woman-02.jpg",
+    "opinion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi enim eveniet beatae numquam quas iusto vero, ex nam tempore officia voluptatum optio error excepturi illum possimus odit sequi laboriosam perferendis."
+  },
+  {
+    "id": 6,
+    "name": "Warren Wong",
+    "status": "Graphic Design Student",
+		"headshot": "./img/woman-03.jpeg",
+    "opinion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptatem quae necessitatibus id? Accusantium, sapiente."
+  },
+  {
+    "id": 7,
+    "name": "Christopher Campbell",
+    "status": "UI/UX Student",
+		"headshot": "./img/man-01.jpg",
+    "opinion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis"
+  },
+  {
+    "id": 8,
+    "name": "Lesly B.Suarez",
+    "status": "Web development Student",
+		"headshot": "./img/man-02.jpg",
+    "opinion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi enim eveniet beatae numquam quas iusto vero, ex nam tempore officia voluptatum optio error excepturi illum possimus odit sequi laboriosam perferendis."
+  },
+  {
+    "id": 9,
+    "name": "Tamara Bellis",
+    "status": "Graphic Design Student",
+		"headshot": "./img/man-03.jpg",
+    "opinion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptatem quae necessitatibus id? Accusantium, sapiente."
+  },
+  {
+    "id": 10,
+    "name": "Jack Finnigan",
+    "status": "UI/UX Student",
+		"headshot": "./img/woman-01.jpg",
+    "opinion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis"
+  },
+  {
+    "id": 11,
+    "name": "Michael Dam",
+    "status": "Web development Student",
+		"headshot": "./img/woman-02.jpg",
+    "opinion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi enim eveniet beatae numquam quas iusto vero, ex nam tempore officia voluptatum optio error excepturi illum possimus odit sequi laboriosam perferendis."
+  },
+  {
+    "id": 12,
+    "name": "Warren Wong",
+    "status": "Graphic Design Student",
+		"headshot": "./img/woman-03.jpeg",
+    "opinion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptatem quae necessitatibus id? Accusantium, sapiente."
+  }
+]

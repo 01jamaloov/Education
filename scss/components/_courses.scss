@@ -1,0 +1,86 @@
+.courses{
+	background-color: var(--section-bg);
+
+	&-wrapper{
+		max-width: 42rem;
+	}
+
+	&-content{
+		margin: 3rem 0 1.6rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&-card{
+		background-color: var(--container-color);
+		padding: 1.5rem;
+		border-radius: 6px;
+		height: 500px;
+		margin-bottom: 1.4rem;
+		width: 32%;
+	}
+
+	&-img{
+		overflow: hidden;
+		border-radius: 4px;
+	}
+
+	&-img img{
+		transition: 1s;
+	}
+
+	&-img:hover img{
+		transform: scale(1.2);
+		filter: brightness(50%);
+	}
+
+	&-rating{
+		display: flex;
+		justify-content: space-between;
+		padding-top: 1.5rem;
+		align-items: center;
+	}
+
+	&-numbers i{
+		font-size: 1rem;
+		padding: 7px 9px;
+		border: 1px solid #C8C8C8;
+		border-radius: 50%;
+		color: var(--first-color);
+		margin-right: 0.5rem;
+	}
+
+	&-numbers .number{
+		font-weight: 400;
+		font-size: 1rem;
+		color: var(--text-color);
+	}
+
+	&-info{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 2.8rem 0 1rem;
+	}
+
+	&-title{
+		font-size: var(--normal-font-size);
+		color: var(--title-color);
+		font-weight: 700;
+	}
+
+	&-price{
+		font-size: var(--normal-font-size);
+		color: var(--first-color);
+		font-weight: 700;
+	}
+
+	&-text{
+		font-size: var(--tiny-font-size);
+		font-weight: 400;
+		color: var(--text-color);
+		line-height: 1.5rem;
+	}
+}

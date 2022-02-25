@@ -1,0 +1,150 @@
+.contact {
+  padding: 5rem 0;
+
+	.container{
+		position: relative;
+	}
+
+  &-wrapper {
+    max-width: 34rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+	.review-content{
+		max-width: 50%;
+		width: calc(100vw - 4rem);
+		padding: 0.5rem 0;
+		margin: 0 auto;
+		overflow: hidden;
+
+		.review-arrow{
+			z-index: 100;
+			position: absolute;
+			top: 25%;
+			transform: translateY(-35%);
+			width: 3rem;
+			height: 3rem;
+			border: none;
+			border-radius: 50%;
+			background-color: transparent;
+			color: var(--first-color);
+			border: 1px solid var(--first-color);
+			font-size: 1.5rem;
+			transition: 0.3s;
+
+			&:hover{
+				color: #fff;
+				background-color: var(--first-color);
+			}
+		}
+
+		.review-arrow-left{
+			left: 10%;
+		}
+
+		.review-arrow-right{
+			right: 10%;
+		}
+
+		.review-info{
+			display: flex;
+			transition: all 0.4s ease-in-out;
+
+			.review-inner{
+				flex: 1 0 100%;
+				display: grid;
+				place-items: center;
+				max-width: 100%;
+				text-align: center;
+
+				.review-headshot{
+					inline-size: 15rem;
+					block-size: 15rem;
+
+					img{
+						inline-size: inherit;
+						block-size: inherit;
+						object-fit: cover;
+						border-radius: 1%;
+					}
+				}
+
+				.review-name{
+					font-size: var(--normal-font-size);
+					color: var(--title-color);
+					font-weight: 500;
+					margin: 0.5rem 0;
+				}
+
+				.review-status{
+					color: var(--text-color);
+					font-size: calc(var(--tiny-font-size) - 0.1rem);
+				}
+
+				.review-description{
+					color: var(--text-color);
+					font-size: var(--tiny-font-size);
+				}
+			}
+		}
+	}
+
+  .form {
+    max-width: 506px;
+    width: 100%;
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: var(--first-color);
+      max-width: 58.6rem;
+      margin: 0 auto;
+      padding: 3rem 0 4rem;
+      border-radius: 4px;
+      margin-top: var(--header-height);
+    }
+
+    .my-form {
+      display: flex;
+      background-color: #fff;
+      align-items: center;
+      padding: 8px 8px 8px 24px;
+      border-radius: 4px;
+    }
+
+    &-input {
+      width: 100%;
+      border: none;
+      font-size: 14px;
+      color: var(--text-color);
+      font-weight: 400;
+      line-height: calc(22 / 14 * 100%);
+      caret-color: var(--first-color);
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &-btn {
+      border: none;
+      min-height: 3rem;
+      min-width: 7.1875rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: var(--first-color);
+      color: #fff;
+      border-radius: 4px;
+      padding: 0;
+    }
+  }
+}
+
+.form-wrapper .contact-wrapper :is(.section-title, .section-subtitle) {
+  color: #fff;
+}

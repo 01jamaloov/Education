@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Education</title>
+	<!-- Site icon -->
+	<link rel="icon" href="./img/profile-2.png">
+	<!-- Uni icons -->
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- Min css -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="./js/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+	<!-- Dark theme button -->
+	<div class="dark-button">
+		<i class="uil uil-moon moon" id="dark-button"></i>
+	</div>
+	<!-- Preloader -->
+	<div class="loader">
+		<div class="circle"></div>
+		<div class="circle"></div>
+		<div class="circle"></div>
+	</div>
+	<!-- Site arrow -->
+	<a class="site-arrow" href="#header">
+		<i class="uil uil-top-arrow-from-top arrow"></i>
+	</a>
+	<!-- Burger button -->
+	<div class="menu-toggle" id="toggler">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<!-- Cursor -->
+	<div class="inner-cursor"></div>
+	<div class="outer-cursor"></div>
+	<!-- Sign in -->
+	<div class="sign-in-wrapper">
+		<div class="signIn">
+			<div class="close_btn_signIn">
+				<i class="uil uil-multiply"></i>
+			</div>
+			<h2 class="signIn_title">Sign in</h2>
+			<form action="" class="signIn_form">
+				<div class="signIn_form_element">
+					<p class="signIn_form_title">Email</p>
+					<input type="email" placeholder="Enter email">
+				</div>
+				<div class="signIn_form_element">
+					<p class="signIn_form_title">Password</p>
+					<input type="password" placeholder="Enter password">
+				</div>
+				<div class="signIn_checkbox">
+					<input class="checkbox" type="checkbox">
+					<p class="signIn_form_title">Remember me</p>
+				</div>
+				<button class="signIn_btn">Sign in</button>
+			</form>
+			<a href="#" class="signIn_forgot">Forgot password?</a>
+		</div>
+	</div>
+	<!-- Sign up -->
+	<div class="sign-in-wrapper sign-up-wrapper">
+		<div class="signIn">
+			<div class="close_btn_signUp">
+				<i class="uil uil-multiply"></i>
+			</div>
+			<h2 class="signIn_title">Sign up</h2>
+			<form action="" class="signIn_form">
+				<div class="signIn_form_element">
+					<p class="signIn_form_title">First Name</p>
+					<input type="email" placeholder="Enter email">
+				</div>
+				<div class="signIn_form_element">
+					<p class="signIn_form_title">Last Name</p>
+					<input type="email" placeholder="Enter email">
+				</div>
+				<div class="signIn_form_element">
+					<p class="signIn_form_title">Language</p>
+					<select class="select">
+						<option disabled selected>Choose Language</option>
+						<option></option>
+						<option>English</option>
+						<option>Russian</option>
+						<option>Uzbek</option>
+					</select>
+				</div>
+				<div class="signIn_form_element">
+					<p class="signIn_form_title">Phone Number</p>
+					<input type="tel" placeholder="+998 () XXX-XX-XX">
+				</div>
+				<button class="signIn_btn">Sign up</button>
+			</form>
+		</div>
+	</div>
+	<header class="header" id="header">
+		<div class="overlay"></div>
+		<nav class="navbar">
+			<div class="container">
+				<div class="desktop-nav">
+					<a class="navbar-brand" href="#">Education</a>
+					<ul class="navbar-menu ml-auto">
+						<li class="nav-item dropdown active">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								aria-expanded="false">
+								Home
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#header">Find your course that makes bright future</a>
+								<a class="dropdown-item" href="#howItWork">How it work</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								aria-expanded="false">
+								Courses
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#courses">Our all the online courses</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								aria-expanded="false">
+								Page
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#page">Meet with our mentor</a>
+								<a class="dropdown-item" href="#event">Upcoming event</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								aria-expanded="false">
+								Blog
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#blog">Our latest blog</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contacts">Contact</a>
+						</li>
+						<li class="nav-item">
+							<button class="nav-link nav-link-btn" href="#" id="signIn">Sign in</button>
+						</li>
+						<li class="nav-item">
+							<button class="nav-link nav-link-btn" href="#" id="signUp">Sign up</button>
+						</li>
+					</ul>
+				</div>
+				<div class="mobile-nav" id="mobile-nav">
+					<a class="navbar-brand" href="#">Education</a>
+					<ul class="navbar-menu">
+						<li class="nav-item active">
+							<a class="nav-link" href="#header">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#courses">Courses</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#page">
+								Page
+							</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="#blog">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+						<li class="nav-item">
+							<button class="nav-link nav-link-btn" href="#" id="signIn">Sign in</button>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-btn" href="#">Sign up</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="header-content">
+			<h1 class="header-title">Self-Paced Learning Courses Online</h1>
+			<p class="header-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, vestibulum euismod
+				nullam
+				elementum. Urna, posuere nisi sit gravida massa. Ultrices bibendum sagittis pellentesque vitae sit.</p>
+			<button class="site-btn">Start a course</button>
+		</div>
+	</header>
+	<main class="main">
+		<!-- Home -->
+		<section class="section">
+			<div class="container">
+				<div class="statistics-wrapper">
+					<div class="statistics">
+						<div class="statistics-card content">
+							<div class="statistics-img">
+								<img src="./img/statistics-img.png" alt="">
+							</div>
+							<div class="statistics-content">
+								<h2 class="statistics-title">1400+</h2>
+								<p class="statistics-text">Online Courses</p>
+							</div>
+						</div>
+						<div class="statistics-card content">
+							<div class="statistics-img">
+								<img src="./img/statistics-img-2.png" alt="">
+							</div>
+							<div class="statistics-content">
+								<h2 class="statistics-title">1100+</h2>
+								<p class="statistics-text">Expert Instructors</p>
+							</div>
+						</div>
+						<div class="statistics-card content">
+							<div class="statistics-img">
+								<img src="./img/statistics-img-3.png" alt="">
+							</div>
+							<div class="statistics-content">
+								<h2 class="statistics-title">800+</h2>
+								<p class="statistics-text">Success Stories</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row course-wrapper">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+						<div class="section-wrapper">
+							<h1 class="section-title">Find Your Course That Makes Bright Future</h1>
+							<p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies at diam
+								magnis faucibus et faucibus gravida. malesuada fauci bus iaculis eu. Fusce est, consectetur tempor
+								penatibus sed. Ut dolor, vulputate quam nec aliquam aliquam nisl. Auctor eros, iaculis quam nisi, </p>
+							<p class="course-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit
+								euismod
+								fusce sit. </p>
+							<button class="site-btn">Learn More</button>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+						<iframe width="100%" height="400" src="https://www.youtube.com/embed/rlxojCT-cUM"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section work" id="howItWork">
+			<div class="container">
+				<div class="work-wrapper m-auto">
+					<h1 class="section-title text-center">How It Work</h1>
+					<p class="section-subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et
+						hendrerit
+						euismod fusce sit. </p>
+				</div>
+				<div class="row work-content">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12 work-card content">
+						<img src="./img/work-card-img.png" alt="" class="work-img">
+						<h3 class="work-title">Learn More Online</h3>
+						<p class="work-text">Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Aliquam et hendrer it eui
+							smod fusce sit.</p>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12 work-card content">
+						<img src="./img/work-card-img-2.png" alt="" class="work-img">
+						<h3 class="work-title">Writing Notes</h3>
+						<p class="work-text">Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Aliquam et hendrer it eui
+							smod fusce sit.</p>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12 work-card content">
+						<img src="./img/work-card-img-3.png" alt="" class="work-img">
+						<h3 class="work-title">Interactive Sessions</h3>
+						<p class="work-text">Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Aliquam et hendrer it eui
+							smod fusce sit.</p>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-12 work-card content">
+						<img src="./img/work-card-img-4.png" alt="" class="work-img">
+						<h3 class="work-title">Life Time Support</h3>
+						<p class="work-text">Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Aliquam et hendrer it eui
+							smod fusce sit.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Courses -->
+		<section class="section courses" id="courses">
+			<div class="container">
+				<div class="courses-wrapper m-auto">
+					<h1 class="section-title text-center">Our All The Online Courses</h1>
+					<p class="section-subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat
+						mauris
+						non dictumst in leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="courses-content">
+					<div class="courses-card content">
+						<div class="courses-img">
+							<img class="w-100" src="./img/courses-img.png" alt="">
+						</div>
+						<div class="courses-rating">
+							<div class="courses-numbers">
+								<i class="uil uil-user"></i>
+								<span class="number">5.8k</span>
+							</div>
+							<div class="courses-numbers">
+								<i class="uil uil-eye"></i>
+								<span class="number">69k</span>
+							</div>
+							<div class="courses-numbers">
+								<i class="uil uil-star"></i>
+								<span class="number">4.5</span>
+							</div>
+							<div class="courses-numbers">
+								<img src="./img/profile.png" alt="">
+							</div>
+						</div>
+						<div class="courses-info">
+							<h3 class="courses-title">Development</h3>
+							<p class="courses-price">$150</p>
+						</div>
+						<p class="courses-text">Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst
+							in
+							leo. Lorem ipsum dolor sit.</p>
+					</div>
+					<div class="courses-card content">
+						<div class="courses-img">
+							<img class="w-100" src="./img/courses-img-2.png" alt="">
+						</div>
+						<div class="courses-rating">
+							<div class="courses-numbers">
+								<i class="uil uil-user"></i>
+								<span class="number">5.8k</span>
+							</div>
+							<div class="courses-numbers">
+								<i class="uil uil-eye"></i>
+								<span class="number">69k</span>
+							</div>
+							<div class="courses-numbers">
+								<i class="uil uil-star"></i>
+								<span class="number">4.5</span>
+							</div>
+							<div class="courses-numbers">
+								<img src="./img/profile-2.png" alt="">
+							</div>
+						</div>
+						<div class="courses-info">
+							<h3 class="courses-title">Android Development</h3>
+							<p class="courses-price">$130</p>
+						</div>
+						<p class="courses-text">Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst
+							in
+							leo. Lorem ipsum dolor sit.</p>
+					</div>
+					<div class="courses-card content">
+						<div class="courses-img">
+							<img class="w-100" src="./img/courses-img-3.png" alt="">
+						</div>
+						<div class="courses-rating">
+							<div class="courses-numbers">
+								<i class="uil uil-user"></i>
+								<span class="number">5.8k</span>
+							</div>
+							<div class="courses-numbers">
+								<i class="uil uil-eye"></i>
+								<span class="number">69k</span>
+							</div>
+							<div class="courses-numbers">
+								<i class="uil uil-star"></i>
+								<span class="number">4.5</span>
+							</div>
+							<div class="courses-numbers">
+								<img src="./img/profile-3.png" alt="">
+							</div>
+						</div>
+						<div class="courses-info">
+							<h3 class="courses-title">Java Script Course</h3>
+							<p class="courses-price">$140</p>
+						</div>
+						<p class="courses-text">Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst
+							in
+							leo. Lorem ipsum dolor sit.</p>
+					</div>
+					<div class="courses-card content">
+						<div class="courses-img">
+							<img class="w-100" src="./img/courses-img-4.png" alt="">
+						</div>
+						<div class="courses-rating">
+							<div class="courses-numbers">
+								<i class="uil uil-user"></i>
+								<span class="number">5.8k</span>
+							</div>
+							<div class="courses-numbers">
+								<i class="uil uil-eye"></i>
+								<span class="number">69k</span>
+							</div>
+							<div class="courses-numbers">
+								<i class="uil uil-star"></i>
+								<span class="number">4.5</span>
+							</div>
+							<div class="courses-numbers">
+								<img src="./img/profile-3.png" alt="">
+							</div>
+						</div>
+						<div class="courses-info">
+							<h3 class="courses-title">Android Development</h3>
+							<p class="courses-price">$120</p>
+						</div>
+						<p class="courses-text">Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst
+							in
+							leo. Lorem ipsum dolor sit.</p>
+					</div>
+					<div class="courses-card content">
+						<div class="courses-img">
+							<img class="w-100" src="./img/courses-img-5.png" alt="">
+						</div>
+						<div class="courses-rating">
+							<div class="courses-numbers">
+								<i class="uil uil-user"></i>
+								<span class="number">5.8k</span>
+							</div>
+							<div class="courses-numbers">
+								<i class="uil uil-eye"></i>
+								<span class="number">69k</span>
+							</div>
+							<div class="courses-numbers">
+								<i class="uil uil-star"></i>
+								<span class="number">4.5</span>
+							</div>
+							<div class="courses-numbers">
+								<img src="./img/profile-4.png" alt="">
+							</div>
+						</div>
+						<div class="courses-info">
+							<h3 class="courses-title">Java Script Course</h3>
+							<p class="courses-price">$120</p>
+						</div>
+						<p class="courses-text">Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst
+							in
+							leo. Lorem ipsum dolor sit.</p>
+					</div>
+					<div class="courses-card content">
+						<div class="courses-img">
+							<img class="w-100" src="./img/courses-img-6.png" alt="">
+						</div>
+						<div class="courses-rating">
+							<div class="courses-numbers">
+								<i class="uil uil-user"></i>
+								<span class="number">5.8k</span>
+							</div>
+							<div class="courses-numbers">
+								<i class="uil uil-eye"></i>
+								<span class="number">69k</span>
+							</div>
+							<div class="courses-numbers">
+								<i class="uil uil-star"></i>
+								<span class="number">4.5</span>
+							</div>
+							<div class="courses-numbers">
+								<img src="./img/profile-5.png" alt="">
+							</div>
+						</div>
+						<div class="courses-info">
+							<h3 class="courses-title">Basic Marketing</h3>
+							<p class="courses-price">$100</p>
+						</div>
+						<p class="courses-text">Lorem ipsum dolor sit amet, consecte adipiscing elit. Placerat mauris non dictumst
+							in
+							leo. Lorem ipsum dolor sit.</p>
+					</div>
+				</div>
+				<button class="site-btn m-auto d-block">View All Courses</button>
+			</div>
+		</section>
+		<!-- Page -->
+		<section class="section page" id="page">
+			<div class="container">
+				<div class="courses-wrapper m-auto">
+					<h1 class="section-title text-center">Meet with Our Mentor</h1>
+					<p class="section-subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
+						vestibulum euismod nullam elementum. Urna, posuere nisi sit gravida massa.</p>
+				</div>
+				<div class="card-deck">
+					<div class="card content">
+						<div class="card-img">
+							<img src="./img/mentor.jpg" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Mohammad Ali</h5>
+							<p class="card-text">CEO, Developer</p>
+							<div class="page-rating">
+								<div class="page-numbers">
+									<i class="uil uil-user"></i>
+									<span class="number">5.8k</span>
+								</div>
+								<div class="page-numbers">
+									<i class="uil uil-favorite"></i>
+									<span class="number">4.5</span>
+								</div>
+								<div class="page-numbers">
+									<span class="number">25+ Courses</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card content">
+						<div class="card-img">
+							<img src="./img/mentor-2.jpg" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Braniya Lara</h5>
+							<p class="card-text">Content Writter</p>
+							<div class="page-rating">
+								<div class="page-numbers">
+									<i class="uil uil-user"></i>
+									<span class="number">5.8k</span>
+								</div>
+								<div class="page-numbers">
+									<i class="uil uil-favorite"></i>
+									<span class="number">4.5</span>
+								</div>
+								<div class="page-numbers">
+									<span class="number">25+ Courses</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card content">
+						<div class="card-img">
+							<img src="./img/mentor-3.jpg" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Jack Thompson</h5>
+							<p class="card-text">Content Writter</p>
+							<div class="page-rating">
+								<div class="page-numbers">
+									<i class="uil uil-user"></i>
+									<span class="number">5.8k</span>
+								</div>
+								<div class="page-numbers">
+									<i class="uil uil-favorite"></i>
+									<span class="number">4.5</span>
+								</div>
+								<div class="page-numbers">
+									<span class="number">25+ Courses</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Event -->
+		<section class="section event" id="event">
+			<div class="container">
+				<div class="courses-wrapper m-auto">
+					<h1 class="section-title text-center">Upcoming Events</h1>
+					<p class="section-subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
+						vestibulum euismod nullam elementum.</p>
+				</div>
+				<div class="card-deck">
+					<div class="card content">
+						<div class="card-img">
+							<img src="./img/event.jpg" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">TED Talks at UCF College of Education</h5>
+							<div class="page-rating">
+								<div class="page-numbers">
+									<i class="uil uil-clock"></i>
+									<span class="number">4.00pm - 8.00pm</span>
+								</div>
+								<div class="page-numbers">
+									<i class="uil uil-location-point"></i>
+									<span class="number">Dhaka Bangladesh</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card content">
+						<div class="card-img">
+							<img src="./img/event-2.jpg" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Summer Course Starts From June</h5>
+							<div class="page-rating">
+								<div class="page-numbers">
+									<i class="uil uil-clock"></i>
+									<span class="number">4.00pm - 8.00pm</span>
+								</div>
+								<div class="page-numbers">
+									<i class="uil uil-location-point"></i>
+									<span class="number">Dhaka Bangladesh</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card content">
+						<div class="card-img">
+							<img src="./img/event-3.jpg" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Importance of Research Seminar</h5>
+							<div class="page-rating">
+								<div class="page-numbers">
+									<i class="uil uil-clock"></i>
+									<span class="number">4.00pm - 8.00pm</span>
+								</div>
+								<div class="page-numbers">
+									<i class="uil uil-location-point"></i>
+									<span class="number">Dhaka Bangladesh</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-bottom">
+				<div class="container">
+					<div class="page-bottom-wrapper">
+						<h1 class="section-title counter">85+</h1>
+						<p class="section-subtitle">Teachers</p>
+					</div>
+					<div class="page-bottom-wrapper">
+						<h1 class="section-title counter">850+</h1>
+						<p class="section-subtitle">Students</p>
+					</div>
+					<div class="page-bottom-wrapper">
+						<h1 class="section-title counter">55+</h1>
+						<p class="section-subtitle">Courses</p>
+					</div>
+					<div class="page-bottom-wrapper">
+						<h1 class="section-title counter">25+</h1>
+						<p class="section-subtitle">Country</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Blog -->
+		<section class="section blog" id="blog">
+			<div class="container">
+				<div class="blog-wrapper m-auto">
+					<h1 class="section-title text-center">Our Latest Blog</h1>
+					<p class="section-subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
+						vestibulum euismod nullam at entum.</p>
+				</div>
+				<div class="card-deck blog-deck">
+					<div class="card content">
+						<div class="blog-img">
+							<img src="./img/blog.jpg" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Marketing Creative Camping Brand Image</h5>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit. Amet, vestibulum euismod
+								nullam at entum. Urna, posuere nisi sit gravida massa.</p>
+							<a href="#" class="blog-link">Read More...</a>
+						</div>
+					</div>
+					<div class="card content">
+						<div class="blog-img">
+							<img src="./img/blog-2.jpg" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Marketing Creative Camping Brand Image</h5>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit. Amet, vestibulum euismod
+								nullam at entum. Urna, posuere nisi sit gravida massa.</p>
+							<a href="#" class="blog-link">Read More...</a>
+						</div>
+					</div>
+					<div class="card content">
+						<div class="blog-img">
+							<img src="./img/blog-3.jpg" class="card-img-top" alt="...">
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Product Marketing Creative Camping Brand Image</h5>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit. Amet, vestibulum euismod
+								nullam at entum. Urna, posuere nisi sit gravida massa.</p>
+							<a href="#" class="blog-link">Read More...</a>
+						</div>
+					</div>
+				</div>
+				<button class="site-btn m-auto d-block">View All Courses</button>
+			</div>
+		</section>
+		<!-- Contact -->
+		<section class="section contact" id="contact">
+			<div class="container">
+				<div class="contact-wrapper m-auto">
+					<h1 class="section-title text-center">What Our Students Say</h1>
+					<p class="section-subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat
+						mauris non dictumst in leo. Lorem ipsum dolor sit amet.</p>
+				</div>
+				<!-- Review content -->
+				<div class="review-content">
+					<button id="arrow-left" class="review-arrow review-arrow-left">
+						<i class="uil uil-angle-left"></i>
+					</button>
+					<!-- Review info -->
+					<div class="review-info">
+					</div>
+					<button id="arrow-right" class="review-arrow review-arrow-right">
+						<i class="uil uil-angle-right"></i>
+					</button>
+				</div>
+				<div class="form-wrapper" id="contacts">
+					<div class="contact-wrapper m-auto">
+						<h1 class="section-title text-center">What Our Students Say</h1>
+						<p class="section-subtitle text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat
+							mauris non dictumst in leo. Lorem ipsum dolor sit amet.</p>
+					</div>
+					<form class="form">
+						<div class="my-form">
+							<input class="form-input" type="text" placeholder="Enter your email...">
+							<button class="form-btn">Subscribe</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row footer-wrapper">
+				<div class="col-lg-3 col-md-6 col-sm-6 col-6 footer-card">
+					<h3 class="footer-title">Education</h3>
+					<p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit. Amet, vestibulum euismod
+						nullam the elementum. Urna, posuere nisi sit gravid.</p>
+					<h3 class="footer-title">Follow Us</h3>
+					<div class="footer-icon">
+						<button class="footer-btn">
+							<i class="uil uil-facebook-f"></i>
+						</button>
+						<button class="footer-btn">
+							<i class="uil uil-twitter"></i>
+						</button>
+						<button class="footer-btn">
+							<i class="uil uil-instagram"></i>
+						</button>
+						<button class="footer-btn">
+							<i class="uil uil-linkedin"></i>
+						</button>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-6 footer-card">
+					<h3 class="footer-title">Feature Links</h3>
+					<ul class="footer-menu">
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								<i class="uil uil-angle-right-b"></i>
+								About Us
+							</a>
+						</li>
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								<i class="uil uil-angle-right-b"></i>
+								Graduation
+							</a>
+						</li>
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								<i class="uil uil-angle-right-b"></i>
+								Scholarship
+							</a>
+						</li>
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								<i class="uil uil-angle-right-b"></i>
+								Admissions
+							</a>
+						</li>
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								<i class="uil uil-angle-right-b"></i>
+								International
+							</a>
+						</li>
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								<i class="uil uil-angle-right-b"></i>
+								Events
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-6 footer-card">
+					<h3 class="footer-title">Support</h3>
+					<ul class="footer-menu">
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								<i class="uil uil-angle-right-b"></i>
+								Language
+							</a>
+						</li>
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								<i class="uil uil-angle-right-b"></i>
+								WordPress
+							</a>
+						</li>
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								<i class="uil uil-angle-right-b"></i>
+								Privacy
+							</a>
+						</li>
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								<i class="uil uil-angle-right-b"></i>
+								FAQs
+							</a>
+						</li>
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								<i class="uil uil-angle-right-b"></i>
+								Support
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-6 footer-card">
+					<h3 class="footer-title">Contact Us</h3>
+					<ul class="footer-menu">
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								230, Mirpur Area, Mirpur 10, Dhaka,Bangladesh
+							</a>
+						</li>
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								<i class="uil uil-phone footer-contact-icon"></i>
+								+017 4845 7269
+							</a>
+						</li>
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								<i class="uil uil-envelope-edit footer-contact-icon"></i>
+								info@gmail.com
+							</a>
+						</li>
+						<li class="footer-item">
+							<a href="" class="footer-link">
+								<i class="uil uil-globe footer-contact-icon"></i>
+								www.yourdomain.com
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+		crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

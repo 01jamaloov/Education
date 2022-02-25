@@ -1,0 +1,58 @@
+.footer{
+	background-color: var(--section-bg);
+	padding: 5rem 0;
+
+	&-title{
+		font-weight: 700;
+		font-size: var(--normal-font-size);
+		color: var(--title-color);
+	}
+
+	&-text{
+		font-weight: 400;
+		color: var(--text-color);
+		font-size: .825rem;
+		line-height: 2;
+	}
+
+	&-icon{
+		margin-top: 1.5rem;
+	}
+
+	&-btn{
+		border: none;
+		background-color: #fff;
+		padding: 6px 10px;
+		border-radius: 4px;
+		transition: .3s;
+		margin-right: 5px;
+		color: var(--first-color);
+	}
+
+	&-btn:hover{
+		background-color: var(--first-color);
+		color: #fff;
+	}
+
+	&-menu{
+		list-style: none;
+		padding: 0;
+	}
+
+	&-item{
+		line-height: 2;
+	}
+
+	&-link{
+		color: var(--text-color);
+	}
+
+	&-link > i{
+		color: var(--first-color);
+	}
+
+	&-link > i.footer-contact-icon{
+		color: var((--title-color));
+		font-size: 1.5rem;
+	}
+}
